@@ -1,0 +1,242 @@
+{:stats {:valid? true,
+         :count 17634,
+         :ok-count 2212,
+         :fail-count 0,
+         :info-count 15422,
+         :by-f {:read {:valid? true,
+                       :count 6785,
+                       :ok-count 830,
+                       :fail-count 0,
+                       :info-count 5955},
+                :txn {:valid? true,
+                      :count 4356,
+                      :ok-count 578,
+                      :fail-count 0,
+                      :info-count 3778},
+                :write {:valid? true,
+                        :count 6493,
+                        :ok-count 804,
+                        :fail-count 0,
+                        :info-count 5689}}},
+ :clock {:valid? true},
+ :perf {:latency-graph {:valid? true},
+        :rate-graph {:valid? true},
+        :valid? true},
+ :ex {:valid? true},
+ :assert {:valid? true, :count 0, :matches ()},
+ :workload {:valid? false,
+            :anomaly-types (:G1b :internal),
+            :anomalies {:G1b ({:op {:type :ok,
+                                    :f :read,
+                                    :value [[:r 47 22]],
+                                    :time 1903096406006,
+                                    :process 1629,
+                                    :index 4541},
+                               :mop [:r 47 22],
+                               :writer {:type :info,
+                                        :f :write,
+                                        :value [[:w 47 22] [:w 47 23]],
+                                        :time 1894044751212,
+                                        :process 1598,
+                                        :error :timeout,
+                                        :index 4519}}
+                              {:op {:type :ok,
+                                    :f :read,
+                                    :value [[:r 221 12] [:r 221 12]],
+                                    :time 9442543637525,
+                                    :process 8326,
+                                    :index 22725},
+                               :mop [:r 221 12],
+                               :writer {:type :info,
+                                        :f :write,
+                                        :value [[:w 221 12]
+                                                [:w 221 13]],
+                                        :time 9434076954049,
+                                        :process 8099,
+                                        :error :timeout,
+                                        :index 22706}}
+                              {:op {:type :ok,
+                                    :f :read,
+                                    :value [[:r 221 12] [:r 221 12]],
+                                    :time 9442543637525,
+                                    :process 8326,
+                                    :index 22725},
+                               :mop [:r 221 12],
+                               :writer {:type :info,
+                                        :f :write,
+                                        :value [[:w 221 12]
+                                                [:w 221 13]],
+                                        :time 9434076954049,
+                                        :process 8099,
+                                        :error :timeout,
+                                        :index 22706}}
+                              {:op {:type :ok,
+                                    :f :read,
+                                    :value [[:r 352 2]],
+                                    :time 15330215073474,
+                                    :process 13223,
+                                    :index 36779},
+                               :mop [:r 352 2],
+                               :writer {:type :info,
+                                        :f :write,
+                                        :value [[:w 352 2] [:w 352 3]],
+                                        :time 15299254410135,
+                                        :process 13188,
+                                        :error :timeout,
+                                        :index 36693}}
+                              {:op {:type :ok,
+                                    :f :read,
+                                    :value [[:r 352 2]],
+                                    :time 15330840532063,
+                                    :process 13223,
+                                    :index 36783},
+                               :mop [:r 352 2],
+                               :writer {:type :info,
+                                        :f :write,
+                                        :value [[:w 352 2] [:w 352 3]],
+                                        :time 15299254410135,
+                                        :process 13188,
+                                        :error :timeout,
+                                        :index 36693}}
+                              {:op {:type :ok,
+                                    :f :txn,
+                                    :value [[:w 389 26] [:r 410 30]],
+                                    :time 17914786569289,
+                                    :process 15155,
+                                    :index 42904},
+                               :mop [:r 410 30],
+                               :writer {:type :ok,
+                                        :f :write,
+                                        :value [[:w 410 30]
+                                                [:w 410 31]],
+                                        :time 17914842537905,
+                                        :process 15292,
+                                        :index 42905}}),
+                        :internal ({:op {:type :ok,
+                                         :f :txn,
+                                         :value [[:w 28 27]
+                                                 [:r 28 28]],
+                                         :time 1067953093534,
+                                         :process 886,
+                                         :index 2521},
+                                    :mop [:r 28 28],
+                                    :expected 27}
+                                   {:op {:type :ok,
+                                         :f :txn,
+                                         :value [[:w 55 12]
+                                                 [:r 55 13]],
+                                         :time 2321030443107,
+                                         :process 1955,
+                                         :index 5562},
+                                    :mop [:r 55 13],
+                                    :expected 12}
+                                   {:op {:type :ok,
+                                         :f :txn,
+                                         :value [[:w 82 17]
+                                                 [:r 82 20]],
+                                         :time 3420909055449,
+                                         :process 2903,
+                                         :index 8238},
+                                    :mop [:r 82 20],
+                                    :expected 17}
+                                   {:op {:type :ok,
+                                         :f :txn,
+                                         :value [[:w 186 16]
+                                                 [:r 186 17]],
+                                         :time 7896553066970,
+                                         :process 6785,
+                                         :index 18967},
+                                    :mop [:r 186 17],
+                                    :expected 16}
+                                   {:op {:type :ok,
+                                         :f :txn,
+                                         :value [[:w 269 19]
+                                                 [:r 269 20]],
+                                         :time 11594193706010,
+                                         :process 9907,
+                                         :index 27912},
+                                    :mop [:r 269 20],
+                                    :expected 19}
+                                   {:op {:type :ok,
+                                         :f :read,
+                                         :value [[:r 284 0]
+                                                 [:r 284 15]],
+                                         :time 12229928072262,
+                                         :process 10467,
+                                         :index 29427},
+                                    :mop [:r 284 15],
+                                    :expected 0}
+                                   {:op {:type :ok,
+                                         :f :txn,
+                                         :value [[:w 290 5]
+                                                 [:r 290 7]],
+                                         :time 12558550323380,
+                                         :process 10854,
+                                         :index 30223},
+                                    :mop [:r 290 7],
+                                    :expected 5}
+                                   {:op {:type :ok,
+                                         :f :txn,
+                                         :value [[:w 316 17]
+                                                 [:r 316 16]],
+                                         :time 13758791589681,
+                                         :process 11981,
+                                         :index 33025},
+                                    :mop [:r 316 16],
+                                    :expected 17}
+                                   {:op {:type :ok,
+                                         :f :txn,
+                                         :value [[:w 356 5]
+                                                 [:r 356 6]],
+                                         :time 15531966689040,
+                                         :process 13501,
+                                         :index 37276},
+                                    :mop [:r 356 6],
+                                    :expected 5}
+                                   {:op {:type :ok,
+                                         :f :read,
+                                         :value [[:r 363 9]
+                                                 [:r 363 11]],
+                                         :time 15773567354553,
+                                         :process 13629,
+                                         :index 37867},
+                                    :mop [:r 363 11],
+                                    :expected 9}
+                                   {:op {:type :ok,
+                                         :f :read,
+                                         :value [[:r 367 15]
+                                                 [:r 367 19]],
+                                         :time 16047715805675,
+                                         :process 13936,
+                                         :index 38507},
+                                    :mop [:r 367 19],
+                                    :expected 15}
+                                   {:op {:type :ok,
+                                         :f :txn,
+                                         :value [[:w 403 18]
+                                                 [:r 403 17]],
+                                         :time 17530192870639,
+                                         :process 14845,
+                                         :index 42001},
+                                    :mop [:r 403 17],
+                                    :expected 18})},
+            :not #{:read-atomic :read-committed},
+            :also-not #{:ROLA
+                        :causal-cerone
+                        :consistent-view
+                        :cursor-stability
+                        :forward-consistent-view
+                        :monotonic-atomic-view
+                        :monotonic-snapshot-read
+                        :monotonic-view
+                        :parallel-snapshot-isolation
+                        :prefix
+                        :repeatable-read
+                        :serializable
+                        :snapshot-isolation
+                        :strong-serializable
+                        :strong-session-serializable
+                        :strong-session-snapshot-isolation
+                        :strong-snapshot-isolation
+                        :update-serializable}},
+ :valid? false}
